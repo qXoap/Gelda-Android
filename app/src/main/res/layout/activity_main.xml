@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="384dp"
+        android:text="@string/submit_button"
+        app:layout_constraintBaseline_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Switch
+        android:id="@+id/women_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="248dp"
+        android:text="@string/women_switch"
+        android:textColor="@color/white"
+        app:layout_constraintBaseline_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.784"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints,UseSwitchCompatOrMaterialXml" />
+
+    <EditText
+        android:id="@+id/weight_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="296dp"
+        android:autofillHints=""
+        android:textColor="@color/white"
+        android:ems="10"
+        android:inputType="number"
+        android:backgroundTint="@color/white"
+        app:layout_constraintBaseline_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="LabelFor, MissingConstraints" />
+
+    <TextView
+        android:id="@+id/text_view"
+        android:layout_width="235dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="204dp"
+        android:text="@string/text_view"
+        android:textColor="@color/white"
+        app:layout_constraintBaseline_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/logoGelda"
+        android:layout_width="198dp"
+        android:layout_height="192dp"
+        android:contentDescription="@string/app_name"
+        app:srcCompat="@mipmap/ic_launcher_adaptive_fore"
+        tools:layout_editor_absoluteX="106dp"
+        tools:layout_editor_absoluteY="12dp"
+        app:layout_constraintBaseline_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageGelda"
+        android:layout_width="286dp"
+        android:layout_height="179dp"
+        android:layout_marginTop="464dp"
+        android:contentDescription="@string/app_name"
+        android:visibility="gone"
+        app:layout_constraintBaseline_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logos"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>
